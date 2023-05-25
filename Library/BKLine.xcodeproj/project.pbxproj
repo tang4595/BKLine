@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2417DF932927C79100E0F825 /* BKLineChartView+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2417DF922927C79100E0F825 /* BKLineChartView+Public.swift */; };
+		2417DF942927C79100E0F825 /* BKLineChartView+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2417DF922927C79100E0F825 /* BKLineChartView+Public.swift */; };
+		242592D22923C7DA0085F32C /* BKLineChartView+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242592D12923C7DA0085F32C /* BKLineChartView+Gesture.swift */; };
+		242592D32923C7DA0085F32C /* BKLineChartView+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242592D12923C7DA0085F32C /* BKLineChartView+Gesture.swift */; };
+		242592D52923DD070085F32C /* BKLineUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242592D42923DD070085F32C /* BKLineUtils.swift */; };
+		242592D62923DD070085F32C /* BKLineUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242592D42923DD070085F32C /* BKLineUtils.swift */; };
+		244D5CFF291EA4BC00ACF693 /* BKLineConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D5CFE291EA4BC00ACF693 /* BKLineConfig.swift */; };
+		244D5D00291EA4BC00ACF693 /* BKLineConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D5CFE291EA4BC00ACF693 /* BKLineConfig.swift */; };
+		24932EA929268DBF00625D9D /* BKLineConfig+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24932EA829268DBF00625D9D /* BKLineConfig+Default.swift */; };
+		24932EAA29268DBF00625D9D /* BKLineConfig+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24932EA829268DBF00625D9D /* BKLineConfig+Default.swift */; };
+		24B5BD0729C36EB7004542A2 /* BKLinePainterTradingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5BD0629C36EB7004542A2 /* BKLinePainterTradingView.swift */; };
+		24B5BD0929C44F1B004542A2 /* BKLineChartView+TradingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5BD0829C44F1B004542A2 /* BKLineChartView+TradingView.swift */; };
+		24B5BD1129C566AB004542A2 /* BKLineConfigBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5BD1029C566AB004542A2 /* BKLineConfigBasic.swift */; };
+		24B5BD1229C566AB004542A2 /* BKLineConfigBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5BD1029C566AB004542A2 /* BKLineConfigBasic.swift */; };
+		24B5BD1429C566B1004542A2 /* BKLineConfigTradingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5BD1329C566B1004542A2 /* BKLineConfigTradingView.swift */; };
+		24B5BD1529C566B1004542A2 /* BKLineConfigTradingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5BD1329C566B1004542A2 /* BKLineConfigTradingView.swift */; };
+		24E2DBE829D5231300589B60 /* ChartingLibrary in Resources */ = {isa = PBXBuildFile; fileRef = 24E2DBE729D5231300589B60 /* ChartingLibrary */; };
+		24E75F6C292A40830043BC14 /* BKLineChartView+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E75F6B292A40830043BC14 /* BKLineChartView+Config.swift */; };
+		24E75F6D292A40830043BC14 /* BKLineChartView+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E75F6B292A40830043BC14 /* BKLineChartView+Config.swift */; };
+		24FDD9A2291A852600A70A4C /* BKLine.docc in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9A1291A852600A70A4C /* BKLine.docc */; };
+		24FDD9A8291A852600A70A4C /* BKLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24FDD99D291A852600A70A4C /* BKLine.framework */; };
+		24FDD9AD291A852600A70A4C /* BKLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9AC291A852600A70A4C /* BKLineTests.swift */; };
+		24FDD9AE291A852600A70A4C /* BKLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 24FDD9A0291A852600A70A4C /* BKLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24FDD9DD291A870400A70A4C /* SecondaryChartRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9C4291A870400A70A4C /* SecondaryChartRenderer.swift */; };
+		24FDD9DE291A870400A70A4C /* SecondaryChartRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9C4291A870400A70A4C /* SecondaryChartRenderer.swift */; };
+		24FDD9DF291A870400A70A4C /* MainChartRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9C5291A870400A70A4C /* MainChartRenderer.swift */; };
+		24FDD9E0291A870400A70A4C /* MainChartRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9C5291A870400A70A4C /* MainChartRenderer.swift */; };
+		24FDD9E1291A870400A70A4C /* VolChartRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9C6291A870400A70A4C /* VolChartRenderer.swift */; };
+		24FDD9E2291A870400A70A4C /* VolChartRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9C6291A870400A70A4C /* VolChartRenderer.swift */; };
+		24FDD9E3291A870400A70A4C /* BaseChartRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9C7291A870400A70A4C /* BaseChartRenderer.swift */; };
+		24FDD9E4291A870400A70A4C /* BaseChartRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9C7291A870400A70A4C /* BaseChartRenderer.swift */; };
+		24FDD9E5291A870400A70A4C /* BKLinePainterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9C8291A870400A70A4C /* BKLinePainterView.swift */; };
+		24FDD9E6291A870400A70A4C /* BKLinePainterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9C8291A870400A70A4C /* BKLinePainterView.swift */; };
+		24FDD9E7291A870400A70A4C /* BKLineStateManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9CA291A870400A70A4C /* BKLineStateManger.swift */; };
+		24FDD9E8291A870400A70A4C /* BKLineStateManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9CA291A870400A70A4C /* BKLineStateManger.swift */; };
+		24FDD9E9291A870400A70A4C /* BKLineDataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9CB291A870400A70A4C /* BKLineDataUtil.swift */; };
+		24FDD9EA291A870400A70A4C /* BKLineDataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9CB291A870400A70A4C /* BKLineDataUtil.swift */; };
+		24FDD9EB291A870400A70A4C /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9CC291A870400A70A4C /* UIColor+RGB.swift */; };
+		24FDD9EC291A870400A70A4C /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9CC291A870400A70A4C /* UIColor+RGB.swift */; };
+		24FDD9ED291A870400A70A4C /* BKLineCalculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9CD291A870400A70A4C /* BKLineCalculate.swift */; };
+		24FDD9EE291A870400A70A4C /* BKLineCalculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9CD291A870400A70A4C /* BKLineCalculate.swift */; };
+		24FDD9F1291A870400A70A4C /* BKLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9D0291A870400A70A4C /* BKLineChartView.swift */; };
+		24FDD9F2291A870400A70A4C /* BKLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9D0291A870400A70A4C /* BKLineChartView.swift */; };
+		24FDD9F3291A870400A70A4C /* BKLineChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9D2291A870400A70A4C /* BKLineChartModel.swift */; };
+		24FDD9F4291A870400A70A4C /* BKLineChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9D2291A870400A70A4C /* BKLineChartModel.swift */; };
+		24FDD9F5291A870400A70A4C /* BKLineEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9D3291A870400A70A4C /* BKLineEnum.swift */; };
+		24FDD9F6291A870400A70A4C /* BKLineEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9D3291A870400A70A4C /* BKLineEnum.swift */; };
+		24FDD9F7291A870400A70A4C /* BKLineStockInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9D5291A870400A70A4C /* BKLineStockInfoView.swift */; };
+		24FDD9F8291A870400A70A4C /* BKLineStockInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDD9D5291A870400A70A4C /* BKLineStockInfoView.swift */; };
+		5E8529CB18317A6BE67A3E2D /* libPods-BKLine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FE45C2E27BC811A8E84D01 /* libPods-BKLine.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24FDD9A9291A852600A70A4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24FDD994291A852600A70A4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24FDD99C291A852600A70A4C;
+			remoteInfo = BKLine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07FE45C2E27BC811A8E84D01 /* libPods-BKLine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BKLine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2417DF922927C79100E0F825 /* BKLineChartView+Public.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BKLineChartView+Public.swift"; sourceTree = "<group>"; };
+		242592D12923C7DA0085F32C /* BKLineChartView+Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BKLineChartView+Gesture.swift"; sourceTree = "<group>"; };
+		242592D42923DD070085F32C /* BKLineUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKLineUtils.swift; sourceTree = "<group>"; };
+		244D5CFE291EA4BC00ACF693 /* BKLineConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKLineConfig.swift; sourceTree = "<group>"; };
+		24932EA829268DBF00625D9D /* BKLineConfig+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BKLineConfig+Default.swift"; sourceTree = "<group>"; };
+		24B5BD0629C36EB7004542A2 /* BKLinePainterTradingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKLinePainterTradingView.swift; sourceTree = "<group>"; };
+		24B5BD0829C44F1B004542A2 /* BKLineChartView+TradingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BKLineChartView+TradingView.swift"; sourceTree = "<group>"; };
+		24B5BD1029C566AB004542A2 /* BKLineConfigBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKLineConfigBasic.swift; sourceTree = "<group>"; };
+		24B5BD1329C566B1004542A2 /* BKLineConfigTradingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKLineConfigTradingView.swift; sourceTree = "<group>"; };
+		24E2DBE729D5231300589B60 /* ChartingLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ChartingLibrary; sourceTree = "<group>"; };
+		24E75F6B292A40830043BC14 /* BKLineChartView+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BKLineChartView+Config.swift"; sourceTree = "<group>"; };
+		24FDD99D291A852600A70A4C /* BKLine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BKLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FDD9A0291A852600A70A4C /* BKLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKLine.h; sourceTree = "<group>"; };
+		24FDD9A1291A852600A70A4C /* BKLine.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = BKLine.docc; sourceTree = "<group>"; };
+		24FDD9A7291A852600A70A4C /* BKLineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BKLineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FDD9AC291A852600A70A4C /* BKLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKLineTests.swift; sourceTree = "<group>"; };
+		24FDD9B8291A860B00A70A4C /* BKUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BKUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FDD9BC291A861100A70A4C /* BKConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BKConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FDD9C4291A870400A70A4C /* SecondaryChartRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryChartRenderer.swift; sourceTree = "<group>"; };
+		24FDD9C5291A870400A70A4C /* MainChartRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainChartRenderer.swift; sourceTree = "<group>"; };
+		24FDD9C6291A870400A70A4C /* VolChartRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolChartRenderer.swift; sourceTree = "<group>"; };
+		24FDD9C7291A870400A70A4C /* BaseChartRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseChartRenderer.swift; sourceTree = "<group>"; };
+		24FDD9C8291A870400A70A4C /* BKLinePainterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKLinePainterView.swift; sourceTree = "<group>"; };
+		24FDD9CA291A870400A70A4C /* BKLineStateManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKLineStateManger.swift; sourceTree = "<group>"; };
+		24FDD9CB291A870400A70A4C /* BKLineDataUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKLineDataUtil.swift; sourceTree = "<group>"; };
+		24FDD9CC291A870400A70A4C /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		24FDD9CD291A870400A70A4C /* BKLineCalculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKLineCalculate.swift; sourceTree = "<group>"; };
+		24FDD9D0291A870400A70A4C /* BKLineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKLineChartView.swift; sourceTree = "<group>"; };
+		24FDD9D2291A870400A70A4C /* BKLineChartModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKLineChartModel.swift; sourceTree = "<group>"; };
+		24FDD9D3291A870400A70A4C /* BKLineEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKLineEnum.swift; sourceTree = "<group>"; };
+		24FDD9D5291A870400A70A4C /* BKLineStockInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKLineStockInfoView.swift; sourceTree = "<group>"; };
+		63507A5B40544D4C9B02097B /* Pods-BKLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BKLine.release.xcconfig"; path = "../Sample/Pods/Target Support Files/Pods-BKLine/Pods-BKLine.release.xcconfig"; sourceTree = "<group>"; };
+		715A22511C0BFB794A1339D9 /* Pods-BKLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BKLine.debug.xcconfig"; path = "../Sample/Pods/Target Support Files/Pods-BKLine/Pods-BKLine.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24FDD99A291A852600A70A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E8529CB18317A6BE67A3E2D /* libPods-BKLine.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FDD9A4291A852600A70A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FDD9A8291A852600A70A4C /* BKLine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24CC695129C35B1700921A17 /* TradingView */ = {
+			isa = PBXGroup;
+			children = (
+				24E2DBE729D5231300589B60 /* ChartingLibrary */,
+			);
+			path = TradingView;
+			sourceTree = "<group>";
+		};
+		24FDD993291A852600A70A4C = {
+			isa = PBXGroup;
+			children = (
+				24FDD99F291A852600A70A4C /* BKLine */,
+				24FDD9AB291A852600A70A4C /* BKLineTests */,
+				24FDD99E291A852600A70A4C /* Products */,
+				24FDD9B7291A860B00A70A4C /* Frameworks */,
+				8336BA219C1788AD4CBCC6B9 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		24FDD99E291A852600A70A4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24FDD99D291A852600A70A4C /* BKLine.framework */,
+				24FDD9A7291A852600A70A4C /* BKLineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24FDD99F291A852600A70A4C /* BKLine */ = {
+			isa = PBXGroup;
+			children = (
+				24FDD9A1291A852600A70A4C /* BKLine.docc */,
+				24FDD9A0291A852600A70A4C /* BKLine.h */,
+				24FDD9C2291A870400A70A4C /* KLineChart */,
+			);
+			path = BKLine;
+			sourceTree = "<group>";
+		};
+		24FDD9AB291A852600A70A4C /* BKLineTests */ = {
+			isa = PBXGroup;
+			children = (
+				24FDD9AC291A852600A70A4C /* BKLineTests.swift */,
+			);
+			path = BKLineTests;
+			sourceTree = "<group>";
+		};
+		24FDD9B7291A860B00A70A4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24FDD9BC291A861100A70A4C /* BKConfig.framework */,
+				24FDD9B8291A860B00A70A4C /* BKUtil.framework */,
+				07FE45C2E27BC811A8E84D01 /* libPods-BKLine.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24FDD9C2291A870400A70A4C /* KLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				24FDD9D0291A870400A70A4C /* BKLineChartView.swift */,
+				24E75F6B292A40830043BC14 /* BKLineChartView+Config.swift */,
+				242592D12923C7DA0085F32C /* BKLineChartView+Gesture.swift */,
+				2417DF922927C79100E0F825 /* BKLineChartView+Public.swift */,
+				24B5BD0829C44F1B004542A2 /* BKLineChartView+TradingView.swift */,
+				24FDD9C8291A870400A70A4C /* BKLinePainterView.swift */,
+				24B5BD0629C36EB7004542A2 /* BKLinePainterTradingView.swift */,
+				24FDD9CE291A870400A70A4C /* Config */,
+				24FDD9D1291A870400A70A4C /* Model */,
+				24FDD9C3291A870400A70A4C /* Renderer */,
+				24CC695129C35B1700921A17 /* TradingView */,
+				24FDD9C9291A870400A70A4C /* Util */,
+				24FDD9D4291A870400A70A4C /* View */,
+			);
+			path = KLineChart;
+			sourceTree = "<group>";
+		};
+		24FDD9C3291A870400A70A4C /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				24FDD9C7291A870400A70A4C /* BaseChartRenderer.swift */,
+				24FDD9C5291A870400A70A4C /* MainChartRenderer.swift */,
+				24FDD9C4291A870400A70A4C /* SecondaryChartRenderer.swift */,
+				24FDD9C6291A870400A70A4C /* VolChartRenderer.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		24FDD9C9291A870400A70A4C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				24FDD9CD291A870400A70A4C /* BKLineCalculate.swift */,
+				24FDD9CB291A870400A70A4C /* BKLineDataUtil.swift */,
+				24FDD9CA291A870400A70A4C /* BKLineStateManger.swift */,
+				242592D42923DD070085F32C /* BKLineUtils.swift */,
+				24FDD9CC291A870400A70A4C /* UIColor+RGB.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		24FDD9CE291A870400A70A4C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				244D5CFE291EA4BC00ACF693 /* BKLineConfig.swift */,
+				24B5BD1029C566AB004542A2 /* BKLineConfigBasic.swift */,
+				24B5BD1329C566B1004542A2 /* BKLineConfigTradingView.swift */,
+				24932EA829268DBF00625D9D /* BKLineConfig+Default.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		24FDD9D1291A870400A70A4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24FDD9D2291A870400A70A4C /* BKLineChartModel.swift */,
+				24FDD9D3291A870400A70A4C /* BKLineEnum.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24FDD9D4291A870400A70A4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24FDD9D5291A870400A70A4C /* BKLineStockInfoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8336BA219C1788AD4CBCC6B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				715A22511C0BFB794A1339D9 /* Pods-BKLine.debug.xcconfig */,
+				63507A5B40544D4C9B02097B /* Pods-BKLine.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		24FDD998291A852600A70A4C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FDD9AE291A852600A70A4C /* BKLine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		24FDD99C291A852600A70A4C /* BKLine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24FDD9B1291A852600A70A4C /* Build configuration list for PBXNativeTarget "BKLine" */;
+			buildPhases = (
+				A8D35715CC1A6992C35EEBE4 /* [CP] Check Pods Manifest.lock */,
+				24FDD998291A852600A70A4C /* Headers */,
+				24FDD999291A852600A70A4C /* Sources */,
+				24FDD99A291A852600A70A4C /* Frameworks */,
+				24FDD99B291A852600A70A4C /* Resources */,
+				76DD1B737A74CD4A6D4962D2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BKLine;
+			productName = BKLine;
+			productReference = 24FDD99D291A852600A70A4C /* BKLine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		24FDD9A6291A852600A70A4C /* BKLineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24FDD9B4291A852600A70A4C /* Build configuration list for PBXNativeTarget "BKLineTests" */;
+			buildPhases = (
+				24FDD9A3291A852600A70A4C /* Sources */,
+				24FDD9A4291A852600A70A4C /* Frameworks */,
+				24FDD9A5291A852600A70A4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24FDD9AA291A852600A70A4C /* PBXTargetDependency */,
+			);
+			name = BKLineTests;
+			productName = BKLineTests;
+			productReference = 24FDD9A7291A852600A70A4C /* BKLineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24FDD994291A852600A70A4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					24FDD99C291A852600A70A4C = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					24FDD9A6291A852600A70A4C = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 24FDD997291A852600A70A4C /* Build configuration list for PBXProject "BKLine" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24FDD993291A852600A70A4C;
+			productRefGroup = 24FDD99E291A852600A70A4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24FDD99C291A852600A70A4C /* BKLine */,
+				24FDD9A6291A852600A70A4C /* BKLineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24FDD99B291A852600A70A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E2DBE829D5231300589B60 /* ChartingLibrary in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FDD9A5291A852600A70A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76DD1B737A74CD4A6D4962D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BKLine/Pods-BKLine-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BKLine/Pods-BKLine-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BKLine/Pods-BKLine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8D35715CC1A6992C35EEBE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BKLine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24FDD999291A852600A70A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FDD9E7291A870400A70A4C /* BKLineStateManger.swift in Sources */,
+				24B5BD0929C44F1B004542A2 /* BKLineChartView+TradingView.swift in Sources */,
+				24FDD9F7291A870400A70A4C /* BKLineStockInfoView.swift in Sources */,
+				24B5BD1129C566AB004542A2 /* BKLineConfigBasic.swift in Sources */,
+				24E75F6C292A40830043BC14 /* BKLineChartView+Config.swift in Sources */,
+				24B5BD0729C36EB7004542A2 /* BKLinePainterTradingView.swift in Sources */,
+				24FDD9F5291A870400A70A4C /* BKLineEnum.swift in Sources */,
+				24FDD9E9291A870400A70A4C /* BKLineDataUtil.swift in Sources */,
+				24932EA929268DBF00625D9D /* BKLineConfig+Default.swift in Sources */,
+				24FDD9DD291A870400A70A4C /* SecondaryChartRenderer.swift in Sources */,
+				24FDD9F3291A870400A70A4C /* BKLineChartModel.swift in Sources */,
+				24FDD9A2291A852600A70A4C /* BKLine.docc in Sources */,
+				24B5BD1429C566B1004542A2 /* BKLineConfigTradingView.swift in Sources */,
+				244D5CFF291EA4BC00ACF693 /* BKLineConfig.swift in Sources */,
+				242592D22923C7DA0085F32C /* BKLineChartView+Gesture.swift in Sources */,
+				24FDD9EB291A870400A70A4C /* UIColor+RGB.swift in Sources */,
+				24FDD9DF291A870400A70A4C /* MainChartRenderer.swift in Sources */,
+				242592D52923DD070085F32C /* BKLineUtils.swift in Sources */,
+				24FDD9F1291A870400A70A4C /* BKLineChartView.swift in Sources */,
+				24FDD9E1291A870400A70A4C /* VolChartRenderer.swift in Sources */,
+				24FDD9E5291A870400A70A4C /* BKLinePainterView.swift in Sources */,
+				24FDD9ED291A870400A70A4C /* BKLineCalculate.swift in Sources */,
+				24FDD9E3291A870400A70A4C /* BaseChartRenderer.swift in Sources */,
+				2417DF932927C79100E0F825 /* BKLineChartView+Public.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FDD9A3291A852600A70A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FDD9E8291A870400A70A4C /* BKLineStateManger.swift in Sources */,
+				24FDD9F8291A870400A70A4C /* BKLineStockInfoView.swift in Sources */,
+				24E75F6D292A40830043BC14 /* BKLineChartView+Config.swift in Sources */,
+				24FDD9F6291A870400A70A4C /* BKLineEnum.swift in Sources */,
+				24FDD9EA291A870400A70A4C /* BKLineDataUtil.swift in Sources */,
+				24932EAA29268DBF00625D9D /* BKLineConfig+Default.swift in Sources */,
+				24FDD9DE291A870400A70A4C /* SecondaryChartRenderer.swift in Sources */,
+				24FDD9F4291A870400A70A4C /* BKLineChartModel.swift in Sources */,
+				24FDD9AD291A852600A70A4C /* BKLineTests.swift in Sources */,
+				244D5D00291EA4BC00ACF693 /* BKLineConfig.swift in Sources */,
+				242592D32923C7DA0085F32C /* BKLineChartView+Gesture.swift in Sources */,
+				24FDD9EC291A870400A70A4C /* UIColor+RGB.swift in Sources */,
+				24FDD9E0291A870400A70A4C /* MainChartRenderer.swift in Sources */,
+				242592D62923DD070085F32C /* BKLineUtils.swift in Sources */,
+				24FDD9F2291A870400A70A4C /* BKLineChartView.swift in Sources */,
+				24FDD9E2291A870400A70A4C /* VolChartRenderer.swift in Sources */,
+				24FDD9E6291A870400A70A4C /* BKLinePainterView.swift in Sources */,
+				24FDD9EE291A870400A70A4C /* BKLineCalculate.swift in Sources */,
+				24FDD9E4291A870400A70A4C /* BaseChartRenderer.swift in Sources */,
+				24B5BD1229C566AB004542A2 /* BKLineConfigBasic.swift in Sources */,
+				2417DF942927C79100E0F825 /* BKLineChartView+Public.swift in Sources */,
+				24B5BD1529C566B1004542A2 /* BKLineConfigTradingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24FDD9AA291A852600A70A4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24FDD99C291A852600A70A4C /* BKLine */;
+			targetProxy = 24FDD9A9291A852600A70A4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24FDD9AF291A852600A70A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		24FDD9B0291A852600A70A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		24FDD9B2291A852600A70A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 715A22511C0BFB794A1339D9 /* Pods-BKLine.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2FBYAQQ9MT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bkex.base.kline.BKLine;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Modules $(inherited) \"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\" \"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift\" \"${PODS_CONFIGURATION_BUILD_DIR}/Differentiator\" \"${PODS_CONFIGURATION_BUILD_DIR}/JXSegmentedView\" \"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher\" \"${PODS_CONFIGURATION_BUILD_DIR}/ReverseExtension\" \"${PODS_CONFIGURATION_BUILD_DIR}/RxAlamofire\" \"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\" \"${PODS_CONFIGURATION_BUILD_DIR}/RxDataSources\" \"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\" \"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\" \"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\" \"${PODS_CONFIGURATION_BUILD_DIR}/SnapshotKit\" \"${PODS_CONFIGURATION_BUILD_DIR}/Socket.IO-Client-Swift\" \"${PODS_CONFIGURATION_BUILD_DIR}/Starscream\" \"${PODS_CONFIGURATION_BUILD_DIR}/SwiftSoup\" \"${PODS_CONFIGURATION_BUILD_DIR}/SwifterSwift\" \"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\" \"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios\"";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24FDD9B3291A852600A70A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63507A5B40544D4C9B02097B /* Pods-BKLine.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2FBYAQQ9MT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bkex.base.kline.BKLine;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Modules $(inherited) \"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\" \"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift\" \"${PODS_CONFIGURATION_BUILD_DIR}/Differentiator\" \"${PODS_CONFIGURATION_BUILD_DIR}/JXSegmentedView\" \"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher\" \"${PODS_CONFIGURATION_BUILD_DIR}/ReverseExtension\" \"${PODS_CONFIGURATION_BUILD_DIR}/RxAlamofire\" \"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\" \"${PODS_CONFIGURATION_BUILD_DIR}/RxDataSources\" \"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\" \"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\" \"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\" \"${PODS_CONFIGURATION_BUILD_DIR}/SnapshotKit\" \"${PODS_CONFIGURATION_BUILD_DIR}/Socket.IO-Client-Swift\" \"${PODS_CONFIGURATION_BUILD_DIR}/Starscream\" \"${PODS_CONFIGURATION_BUILD_DIR}/SwiftSoup\" \"${PODS_CONFIGURATION_BUILD_DIR}/SwifterSwift\" \"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\" \"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios\"";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24FDD9B5291A852600A70A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2FBYAQQ9MT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bkex.base.kline.BKLineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24FDD9B6291A852600A70A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2FBYAQQ9MT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bkex.base.kline.BKLineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24FDD997291A852600A70A4C /* Build configuration list for PBXProject "BKLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FDD9AF291A852600A70A4C /* Debug */,
+				24FDD9B0291A852600A70A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24FDD9B1291A852600A70A4C /* Build configuration list for PBXNativeTarget "BKLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FDD9B2291A852600A70A4C /* Debug */,
+				24FDD9B3291A852600A70A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24FDD9B4291A852600A70A4C /* Build configuration list for PBXNativeTarget "BKLineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FDD9B5291A852600A70A4C /* Debug */,
+				24FDD9B6291A852600A70A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24FDD994291A852600A70A4C /* Project object */;
+}

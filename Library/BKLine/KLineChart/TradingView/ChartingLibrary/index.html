@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+  <title>TradingView Charting Library demo</title>
+
+  <!-- Fix for iOS Safari zooming bug -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+  <script type="text/javascript" src="charting_library.standalone.js"></script>
+  <script type="text/javascript" src="bundle.js"></script>
+
+  <script type="text/javascript">
+
+    function parseChartCofig(json, chartType) {
+      if (json == undefined) return json;
+      var chartInfo = JSON.parse(json);
+      delete (chartInfo.charts[0].chartProperties.paneProperties.background)
+      delete (chartInfo.charts[0].chartProperties.paneProperties.backgroundGradientEndColor)
+      delete (chartInfo.charts[0].chartProperties.paneProperties.backgroundGradientStartColor)
+      delete (chartInfo.charts[0].chartProperties.paneProperties.horzGridProperties)
+      delete (chartInfo.charts[0].chartProperties.paneProperties.vertGridProperties)
+      delete (chartInfo.charts[0].chartProperties.scalesProperties.lineColor)
+      for (const item of chartInfo.charts[0].panes) {
+        const main = item.sources.find(sub => sub.type === 'MainSeries')
+        if (main && chartType) {
+          main.state.style = chartType;
+        }
+      }
+      return chartInfo
+    }
+
+    async function initOnReady() {
+      var config = await Datafeeds.initTradingView();
+      window.upColor = config.upColor;
+      window.downColor = config.downColor;
+      config.saved_data = parseChartCofig(config.saved_data, config.chartType);
+      var widget = window.tvWidget = new TradingView.widget({
+        // debug: true, // uncomment this line to see Library errors and warnings in the console
+        fullscreen: true,
+        container: "tv_chart_container",
+        datafeed: new Datafeeds.UDFCompatibleDatafeed(),
+        library_path: "charting_library/",
+        client_id: 'tradingview.com',
+        user_id: 'public_user_id',
+        auto_save_delay: 1,
+        load_last_chart: true,
+        custom_css_url: config.theme == 'light' ? '../tradingview.light.css' : '../tradingview.dark.css',
+        ...Datafeeds.initConfig(config.theme, config.chartType),
+        ...config,
+      });
+    };
+
+    window.addEventListener('DOMContentLoaded', initOnReady, false);
+  </script>
+
+</head>
+
+<body style="margin:0px;">
+  <div id="tv_chart_container"></div>
+</body>
+
+</html>

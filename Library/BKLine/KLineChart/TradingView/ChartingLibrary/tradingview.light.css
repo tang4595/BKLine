@@ -1,0 +1,232 @@
+body.chart-page,
+#loading-indicator,
+.chart-container,
+.js-rootresizer__contents,
+.layout__area--center,
+.layout__area--top,
+.layout__area--left,
+.chart-controls-bar {
+  background: #ffffff;
+}
+
+.layout__area--top {
+  display: none;
+}
+
+.group-wWM3zP_M- {
+  background: #ffffff;
+}
+
+.pane-legend-line.pane-legend-wrap.main {
+  display: inline-block;
+}
+
+.chart-page .chart-container {
+  border: none;
+}
+
+.customButton--jqJTfH5- {
+  padding: 0 6px;
+  cursor: pointer;
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+  color: #757575;
+  /* background-color: #ffffffff; */
+}
+
+.icon-1Y-3MM9F- {
+  color: #bbbbbb;
+}
+
+.drawingToolbar-2_so5thS,
+.wrap-379NmUSU,
+.content-379NmUSU,
+.inner-2_so5thS,
+.group-2_so5thS,
+.group-2_so5thS .button-5-QHyx-s {
+  background: #ffffff;
+  color: #364365;
+}
+
+.overflowWrap-PWdgT-U_- {
+  height: 30px;
+}
+
+.menuWrap-23ejLU7n-,
+.tv-floating-toolbar {
+  margin-top: 30px;
+}
+
+.button-2ioYhFEY- svg {
+  fill: #757575;
+  color: #757575;
+}
+
+.button-2-lC3gh4-,
+.button-3xrjDzA4- {
+  cursor: pointer;
+}
+
+.customButton--jqJTfH5-.selected {
+  color: #333;
+}
+
+.group-wWM3zP_M- {
+  margin-left: 0;
+  min-width: 0;
+}
+
+.chart-markup-table>div,
+.chart-markup-table,
+.chart-container {
+  overflow: visible;
+}
+
+.chart-markup-table tr:first-child .pane-legend {
+  top: 0px;
+}
+
+.pane-legend {
+  /* transform: scale(0.8);
+    transform-origin: 0 0; */
+  /* opacity: .4; */
+  white-space: normal;
+}
+
+/* .pane-legend-line.main + .study , .pane-legend-line.main + .study  + .study{
+    display: inline-block;
+  } */
+.pane-legend-line.study {
+  display: inline-block;
+}
+
+.pane-legend-line.pane-legend-wrap.study>.pane-legend-line {
+  max-width: 100%;
+}
+
+
+/* .feature-no-touch .tv-insert-study-item:hover {
+      background: #0a0e41;
+  } */
+
+
+
+
+.kline-study,
+.kline-study-merge {
+  /* border: 1px solid #7e829c; */
+  width: 100%;
+  border-right: none;
+  text-align: center;
+}
+
+.kline-study.end,
+.kline-study-merge.end {
+  /* border-right: 1px solid #7e829c; */
+  border-radius: 0 4px 4px 0;
+}
+
+.kline-study.start,
+.kline-study-merge.start {
+  border-radius: 4px 0 0 4px;
+  margin-left: 20px;
+}
+
+.kline-study.selected,
+.kline-study-merge.selected {
+  border-color: #333;
+}
+
+/* .layout__area--top {
+  display: none;
+} */
+.toggleButton-13QgefpG- {
+  display: none;
+}
+
+.chart-page .chart-container-border {
+  border-radius: 0;
+}
+
+/*.layout__area--top {*/
+/*  height: 43px !important;*/
+/*}*/
+.chart-page .tv-dialog {
+  height: calc(100% - 80px);
+  top: 50% !important;
+  transform: translateY(-50%);
+  max-height: 600px;
+}
+
+.chart-page ._tv-dialog {
+  height: calc(100% - 100px);
+  top: 50% !important;
+  transform: translateY(-50%);
+  max-height: 500px;
+}
+
+.chart-page .tv-dialog .tv-insert-indicator-dialog__body {
+  height: calc(100% - 80px) !important;
+  max-height: 520px;
+}
+
+.chart-page ._tv-dialog ._tv-dialog-content {
+  height: 100%;
+  max-height: 500px;
+}
+
+.chart-page ._tv-dialog ._tv-dialog-content .main-properties {
+  height: calc(100% - 108px);
+  max-height: 392px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.chart-page ._tv-dialog ._tv-dialog-content .main-properties::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: transparent;
+}
+
+.chart-page ._tv-dialog ._tv-dialog-content .main-properties::-webkit-scrollbar-thumb {
+  background-color: #EAECEF;
+  border-radius: 3px;
+}
+
+.chart-page ._tv-dialog ._tv-dialog-content .main-properties::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.oneWidgetsVisible-1NfuygY0.statuses-1NfuygY0,
+.threeWidgetsVisible-1NfuygY0.statuses-1NfuygY0,
+.twoWidgetsVisible-1NfuygY0.statuses-1NfuygY0 {
+  display: none;
+}
+
+.content-379NmUSU .fill-2_so5thS {
+  background-color: transparent;
+}
+
+.dateRangeWrapper-2yU8ifXU,
+.separator-13-1nlsQ {
+  display: none;
+}
+
+.chart-controls-bar {
+  border: none;
+}
+
+.button-2Vpz_LXc {
+  color: #B7BDC6;
+}
+
+.button-2pZNJ24z .inner-2pZNJ24z {
+  display: none;
+}
+
+:root:not(.theme-dark) {
+	--tv-color-toolbar-button-text-active: #f34718;
+	--tv-color-toolbar-button-text-active-hover: #f34718;
+}

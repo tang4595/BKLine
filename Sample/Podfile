@@ -1,0 +1,65 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+#use_frameworks!
+platform :ios, '11.0'
+
+workspace 'BKLineSample.xcworkspace'
+
+def base_install
+  #Specs
+  pod 'Masonry'
+  pod 'MJRefresh','3.1.15.7'
+  pod 'TPKeyboardAvoiding'
+  pod 'Base64', '~> 1.1.2'
+  pod 'TTTAttributedLabel'
+  pod 'SAMKeychain'
+  pod 'lottie-ios'
+  pod 'RSAEncrypt'
+  pod 'Bugly'
+  pod 'SnapKit', '~> 4.0.0'
+  pod 'SwiftyJSON'
+  pod 'M80AttributedLabel', '~> 1.6.3'
+  pod 'TZImagePickerController', '~> 3.2.1'
+  pod 'SocketRocket', '~> 0.5.1'
+  pod 'IQKeyboardManager', '~> 4.0.10'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
+  pod 'RxAlamofire'
+  pod 'Alamofire'
+  pod 'Kingfisher'
+  pod 'SwifterSwift'
+  pod 'Socket.IO-Client-Swift', '~> 15.2.0'
+  pod 'JXSegmentedView' ,'~> 1.0.6'
+  pod 'SnapshotKit'
+  pod 'SwiftSoup'
+  pod 'GT3Captcha-iOS'
+  pod 'CryptoSwift'
+  pod "ReverseExtension"
+  
+  #bkex dependencies
+  pod 'WebViewJavascriptBridge', :modular_headers => true
+end
+
+# 主项目
+target 'BKLineSample' do
+  project 'BKLineSample/BKLineSample.xcodeproj'
+    base_install
+end
+
+# 组件
+target 'BKLine' do
+  project '../Library/BKLine.xcodeproj'
+    base_install
+end
+
+# 全局配置
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings["DEVELOPMENT_TEAM"] = "2FBYAQQ9MT"
+      end
+    end
+  end
+end
